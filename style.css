@@ -22,17 +22,33 @@ header {
 
 }
 
+/* css for all flex containers */
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+}
+
 /* teacozy logo */
 img {
   width: 150px;
   height: 50px;
+  float: left;
+  padding: 10px;
+}
+
+.teacozylogo {
+  flex-grow: 1;
 
 }
 
 /* navigation tab */
 .navigationtab {
     word-spacing: 20px;
-    padding: 5px;
+    padding-right: 30px;
 
 }
 
@@ -63,13 +79,57 @@ div {
 
 .main-text {
   background-color: black;
-  align-items: center;
-  justify-content: center
+  width: 100%;
 
 }
 
-.flexcontainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+/* tea section */
+.tea img {
+  height: 200px;
+  width: 300px;
+  display: block;
+}
+
+#firstsection {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.tea span {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  display: block;
+
+}
+
+/* 3 columns locations */
+
+
+p {
+  display: block;
+}
+ .one .two .three {
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+height: 250px;
+background-color: black;
+opacity: 0.6;
+padding: 10px;
+
+}
+
+
+#location {
+  background-image: url(./resources/locations.jpg);
+  height: 500px;
+  padding-top: 50px;
+
+}
+
+#location .flexcontainer {
+  width: 1100px;
+  margin: auto;
+
 }
